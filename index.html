@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Python Online</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.03.1/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <style id="inverted">
+        body.inverted {
+            filter: invert();
+            background-color: black;
+        }
+    </style>
+</head>
+<body class="invert inverted" style="font-family: 'Courier New', Courier, monospace;">
+    <center>
+        <div>
+            <h1>Python Online</h1>
+        </div>
+        <div>
+            <p>Pro Tip: Press <b>ENTER + SHIFT</b> to run code block</p>
+            <p>Refreshing ⟳ the <b>page</b> to <b>clear everything</b>!!</p>
+        </div>
+    </center>
+    <br>
+    <div style="text-align: center;">
+        <button id="invertButton">Dark Theme</button>
+    </div>
+    <br>
+    <br>
+
+    <py-repl auto-generate="true"></py-repl>
+
+    <py-config src="./settings.toml"></py-config>
+
+    <script src="toggle.js"></script>
+</body>
+</html>
