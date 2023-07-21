@@ -4,7 +4,7 @@
     <title>Python Online</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://pyscript.net/releases/2023.03.1/pyscript.css" />
+    <link rel="stylesheet" href="https://pyscript.net/beta/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     <style id="inverted">
         body.inverted {
@@ -14,23 +14,26 @@
     </style>
 </head>
 <body class="invert inverted" style="font-family: 'Courier New', Courier, monospace;">
-    <center>
-        <div>
-            <h1>Python Online</h1>
-        </div>
-        <div>
-            <p>Pro Tip: Press <b>ENTER + SHIFT</b> to run code block</p>
-            <p>Refreshing ⟳ the <b>page</b> to <b>clear everything</b>!!</p>
-        </div>
-    </center>
-    <br>
     <div style="text-align: center;">
+        <h1>Python Online</h1>
+
+
+        <p>Pro Tip: Press <b>ENTER + SHIFT</b> to run code block</p>
+        <p>Refresh ⟳ the <b>page</b> to <b>clear everything</b>!!</p>
+
+        <br>
+
         <button id="invertButton">Dark Theme</button>
     </div>
     <br>
     <br>
+    <div>
+        
+    <py-repl auto-generate="true" output='output'></py-repl>
+    </div>
 
-    <py-repl auto-generate="true"></py-repl>
+    <div id='output'>
+    </div>
 
     <py-config src="./settings.toml"></py-config>
 
